@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img {
+            width: 100%;
+        }
+        .service, .residential {
+            width: 95%;
+            border: 1px solid #000;
+            margin-left:35px;
+            table-layout: fixed;
+        }
+        .service, .residential, th, td {
+            text-align: left;
+            border: 2px solid #000;
+            border-collapse: collapse;
+            padding-left: 10px;
+        }
+        .service th, .residential th {
+            background-color: rgb(238, 156, 168, 0.3);
+        }
+        .service span {
+            margin-left: 5em;
+            font-weight: normal;
+        }
+        .service-details input, .residential input, .notice input {
+            margin-top: 0.1em;
+            margin-bottom: 0.2em;
+            border-style: none none solid none;
+        }
+        #name1, #name2 {
+            width: 90%;
+        }
+        #address1, #address2 {
+            width: 87.5%;
+        }
+        #city1, #city2 {
+            width: 50%;
+        }
+        #unit1, #unit2 {
+            width: 28%;
+        }
+        #phone11, #phone12, #phone21, #phone22 {
+            width: 40%;
+        }
+        #email1, #email2 {
+            width: 89.5%;
+        }
+        .residential {
+            margin-top: 1.5em;
+        }
+        #whattoexpect, #customersign {
+            margin-left: 2em;
+            margin-right: 2em;
+            text-align: justify;
+        }
+        textarea {
+            border: none;
+            width: 99%;
+        }
+        ul li {
+            display: inline;
+        }
+        .pagebreak {
+            height: 2em;
+            background-color:rgba(41, 40, 40, 0.6);
+            margin-top: 1em;
+        }
+        .page2header {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 3em;
+            margin-bottom: 1em;
+        }
+        .noticeheader {
+            background-color:rgba(41, 40, 40, 0.3);
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0.1em;
+            margin-bottom: 0.1em;
+            text-align: center;
+            color: #fff;
+        }
+        .notice {
+            margin-top: 1em;
+            margin-left: 2.5em;
+            margin-right: 4.5em;
+            text-align: justify;
+        }
+        .notice input {
+            border-style: none none solid none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <div>
+                <img src="./banner.gif" alt="Banner">
+            </div>
+            <div>
+                <table class="service">
+                    <thead>
+                        <tr>
+                            <th>SERVICE PROPERTY INFO:</th>
+                            <th>SERVICE BILLING INFO: <span><input type="checkbox" name="same" id="same">Same as property info</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="service-details"> 
+                            <td>
+                                <label for="name1">Name: </label> <input type="text" name="nam1e" id="name1"> <br>
+                                <label for="address1">Address: </label> <input type="text" name="address1" id="address1"> <br>
+                                <label for="city1">City/Zip: </label> <input type="text" name="city1" id="city1">
+                                <label for="unit1">Unit #:</label> <input type="text" name="unit1" id="unit1"> <br>
+                                <label for="phone11">Phone: </label> <input type="tel" name="phone11" id="phone11">
+                                <label for="phone12">Phone: </label> <input type="tel" name="phone12" id="phone12"> <br>
+                                <label for="email1">Email: </label> <input type="email1" name="" id="email1">
+                            </td>
+                            <td>
+                                <label for="name2">Name: </label> <input type="text" name="name2" id="name2"> <br>
+                                <label for="address2">Address: </label> <input type="text" name="address2" id="address2"> <br>
+                                <label for="city2">City/Zip: </label> <input type="text" name="city2" id="city2">
+                                <label for="unit2">Unit #:</label> <input type="text" name="unit2" id="unit2"> <br>
+                                <label for="phone21">Phone: </label> <input type="tel" name="phone21" id="phone21">
+                                <label for="phone22">Phone: </label> <input type="tel" name="phone22" id="phone22"> <br>
+                                <label for="email2">Email: </label> <input type="email2" name="" id="email2">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="residential">
+                    <tr>
+                        <th colspan="2">RESIDENTIAL RODENT & WILDLIFE CONTROL:</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>ANIMALS TARGETED UNDER THIS SERVICE AGREEMENT:</label> <br>
+                            <input type="checkbox" name="rats" id="rats"> Rats
+                            <input type="checkbox" name="mice" id="mice"> Mice
+                            <input type="checkbox" name="squirrel" id="squirrel"> Squirrels
+                            <input type="checkbox" name="raccoon" id="raccoon"> Raccoons/Opossums
+                            <input type="checkbox" name="skunk" id="skunk"> Skunks
+                            <input type="checkbox" name="feline" id="feline"> Felines
+                            <input type="checkbox" name="other" id="other"> Other 
+                            <input type="text" name="other" id="other">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            1. &nbsp;&nbsp;&nbsp;&nbsp;INITIAL SERVICE: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="exclusion" id="exclusion"> Exclusion: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patch and seal potential animal access points and penetrations as needed. <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="trapping" id="trapping"> Trapping: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supply and set up  <input type="checkbox" name="killtraps" id="killtraps"> Kill Traps
+                            <input type="checkbox" name="gluetraps" id="gluetraps"> Glue Traps
+                            <input type="checkbox" name="livetraps" id="livetraps"> Live Traps
+                            <input type="checkbox" name="baitstations" id="baitstations"> Bait Stations <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the following locations   <input type="checkbox" name="attic" id="attic"> Attic 
+                            <input type="checkbox" name="interior" id="interior"> Interior
+                            <input type="checkbox" name="subarea" id="subarea">Sub Area
+                            <input type="checkbox" name="garage" id="garage">garage
+                            <input type="checkbox" name="exterior" id="exterior">Exterior <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="evictiondevice" id="evictiondevice">Eviction Device: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Supply and install a one-way door in the <input type="checkbox" name="attic2" id="attic2">Attic
+                            <input type="checkbox" name="subarea2" id="subarea2">Sub Area
+                            <ul><li>The cost of initial service $</li><input type="number" name="cost" id="cost"></ul>
+                        </td>
+                        <th>Special Notes & Instructions</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            <textarea name="specialnotes" id="specialnotes" rows="22%"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2. &nbsp;&nbsp;&nbsp;&nbsp;RECURRING SERVICES: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provide a total of <input type="number" name="total" id="total"> follow-up visits to: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="trapcheck" id="trapcheck"> Trap check, remove trapped carcasses and re-bait traps. <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="repair" id="repair"> Repair new holes and entry points. <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="livetrapping" id="livetrapping"> Live trapping daily trap check and remove trapped animals. <br> 
+                            <ul><li>The cost of an additional follow-up visit, if required $</li><input type="number" name="costadd" id="costadd"></ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">SUBSCRIPTION SERVICES:</th>
+                    </tr>  
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="trapping2" id="trapping2"> Trapping <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inspect for new rodent activity, inspect traps, remove trapped carcasses and re-bait traps
+                            <input type="checkbox" name="monthly" id="monthly"> Monthly
+                            <input type="checkbox" name="quarterly" id="quarterly"> Quarterly <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="trapping2" id="trapping2"> Bait stations: <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inspect and re-bait bait stations
+                            <input type="checkbox" name="monthly2" id="monthly2"> Monthly
+                            <input type="checkbox" name="quarterly2" id="quarterly2"> Quarterly
+                        </td>
+                    </tr>  
+                    <tr>
+                        <th colspan="2">SUBSCRIPTION SERVICES:</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="trapping3" id="trapping3"> Trapping <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trap check, remove trapped carcasses and re-bait traps
+                            <input type="checkbox" name="monthly" id="monthly"> Monthly
+                            <input type="checkbox" name="quarterly" id="quarterly"> Quarterly <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">WHAT TO EXPECT:</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="whattoexpect">
+                                Titan Rodent Control ensures all visible entry points will be sealed upon the initial service to exclude rodents from the property, while leaving baited
+traps to catch any rodents on site. Should any entry points become visible during a scheduled follow-up visit, the technician will seal it at no additional
+charge. Customers should note that it may take time to control any infestation or catch rodents in any traps, sometimes taking two-to-three weeks or
+not at all. Interior treatments may prove longer for total control, depending on the parameters of the job. No guarantee is given on proofing work or
+trapping services outside of the 30-day warranty. Should there be any questions or concerns for ongoing issues, please refer to the technician on site.
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">CUSTOMER SIGNATURE:</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="customersign">
+                                The undersigned agrees to abide by all provisions of this agreement. It is agreed and understood that Titan Rodent and Pest Control is in no way
+responsible for damages caused by pests, insects, or rodents. Customer acknowledges that if certain areas of the yard or structure are deemed
+inaccessible, Titan Rodent and Pest Control will not be responsible for servicing these areas (ie. Steep hillsides, construction, excess of bushes or
+shrubbery, etc.). This agreement does not include termite or wood destroying organisms. Customer shall be charged $25.00 service charge on any
+returned checks from the bank. This agreement may be cancelled within 30 days of the next service by written notice from either party. Services may
+not be waved without prior arrangement. Early cancellations on one-year term agreements will result in a cancellation fee of $150.00.
+                            <br><br><br>
+                            Tech ID:
+                            <input type="text" name="techidtechid" id="">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Customer Signature:
+                            <input type="text" name="customersignature" id="customersignature">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Date:
+                            <input type="date" name="signdate" id="signdate">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="pagebreak"></div>
+        <div>
+            <div class="page2header">www.RodentControlTitan.com</div>
+        </div>
+        <div class="noticeheader">
+            NOTICE TO OWNER/TENANT
+        </div>
+        <div class="notice">
+            <ol type="I">
+                <li>
+                    <strong>
+                        TERMS AND CONDITIONS
+                    </strong>
+                </li>
+                <ol type="1">
+                    <li>
+                        FUTURE DAMAGE, LIMITATION OF LIABILITY. This agreement does not provide for the control or prevention of termites, powder-post beetles,
+    woodborers, carpenter ants, carpenter bees, wood wasps, wood-decay fungus or any other pest not indicated herein. The customer expressly waives
+    and releases Titan Rodent and Pest Control from liability for any claim for personal injury or damages to the structure or its contents caused by wood
+    infesting organisms, fire ants, pharaoh ants, spiders, ticks, fleas, wasps, bees or other pests either listed or not listed on this contract.
+                    </li>
+                    <li>
+                        DISCLAIMER
+                        <ol type="A">
+                            <li>
+                                Titan Rodent and Pest Control’s liability under this agreement will be terminated if Titan Rodent and Pest Control is prevented from fulfilling its
+    responsibilities under the terms of this agreement by reason of delays in transportation, shortages of fuel and or materials, strikes, embargoes,
+    fire, floods, quarantine restrictions, protests, earthquakes, hurricanes or any other act of God or circumstances or cause beyond the control of
+    Titan Rodent and Pest Control.
+                            </li>
+                            <li>
+                                Titan Rodent and Pest Control DISCLAIMS ANY LIABILITY FOR SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES. THE GUARANTEES STATED IN
+    THIS AGREEMENT ARE GIVEN IN LIEU OF MERCHANT ABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+                            </li>
+                            <li>
+                                Customers must lock up any/all pets while technicians are on site, keeping these animals out of the servicing area as to not impede the
+    technician to properly perform his job duties, to ensure technicians are not harmed, and/or to secure the animal does not escape the property.
+    Technicians are not to engage with any animals or pets while on site.
+                            </li>
+                            <li>
+                                Titan Rodent Control technicians will service accessible areas only. Technicians will not damage or break areas of the structure for access
+    purposes (drywall, siding, etc.). Any areas which need accessibility must be handled before inspection/treatment by the customer only.
+                            </li>
+                            <li>
+                                Titan Rodent Control does not perform roof repairs, nor get on two-story roofs or roofs with problematic tiles that can break.
+                            </li>
+                            <li>
+                                Homes built before year 
+                                <input type="text" name="homebuiltyear" id="homebuiltyear"> and homes with complicated architecture (towers, round rooms, etc.), Terracotta tiles, dry-rotting siding,
+    unkept, yards with trees, bushes, vines allowing access to roofs, mobile homes, buildings with skirting, and inaccessible areas of homes due to
+    decks, raised patios, and other free standing structures directly against the infested building which could block potential entry points from being
+    identified and properly sealed.
+                            </li>
+                            <li>
+                                Homes that have openings around the entire attic and/or crawlspace perimeter. 
+                            </li>
+                            <li>
+                                All payments are due upfront via credit card or upon completion of first day’s work via check given/left for the technician.
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <li>
+                    PAYMENT AND INVOICING. Customers shall receive an invoice for all Titan Rodent and Pest Control work on the first day of service. All
+payments must be made in full to Titan Rodent and Pest Control upon completion of the initial service. Titan Rodent and Pest Control
+reserves the right to discontinue service for non-payment. 
+                    <ol>
+                        <li>
+                            NON-PAYMENT RULES. Customers shall be emailed their first invoice by Titan Rodent and Pest Control once a week until payment is made in full.
+After 30 days from the initial service, an invoice shall be mailed to the customer containing all late payment fees on top of the initial service fee. After
+45 days, a letter shall be mailed to the customer containing an invoice with an intent to lien. After 60 days from the initial service, an invoice shall be
+mailed to the customer by Titan Rodent and Pest Control with an official lien, including all filing fees.
+                        </li>
+                        <li>
+                            LATE-PAYMENT PENALTY. Any/all late payments shall incur a penalty at the rate of 2% of the total servicing invoice per week, to start accruing after
+ten working days from the initial service. 
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    ARBITRATION. The purchaser and Titan Rodent and Pest Control agree that any controversy or claim between them arising out of relating
+to this agreement shall be settled exclusively by arbitration. Such arbitration shall be conducted in accordance with the Commercial
+Arbitration Rules then in force of the American Arbitration Association. The decision of the arbitrator shall be final and the binding
+resolution of the disagreement, which may be entered as a judgment of the arbitrator’s decision. Neither party shall sue the other where
+the basis of the suit is this agreement other than for enforcement of the judgment of the arbitrator’s decision. In no event shall either
+party be liable to the other for indirect, special or consequential damages or loss of anticipated profits.
+<br><br>UPON REQUEST TITAN RODENT AND PEST CONTROL WILL PROVIDE THE PURCHASER WITH A COPY OF THE MANUFACTURER’S SPECIMEN LABEL OF
+PESTICIDES WHICH WILL BE USED TO TREAT THE PREMISES <br><br>
+State Law requires that you be given the following information: CAUTION - PESTICIDES ARE TOXIC CHEMICALS. Structural Pest Control Operations are
+licensed and regulated by the Structural Pest Control Board and apply pesticides which are registered and approved for use by the California Department
+of Food and Agriculture and the United States Environmental Protection Agency. Registration is granted when the state finds that based on existing
+scientific evidence there are no appreciable risks if proper use conditions are followed or that the risks are outweighed by the benefits. The degree of
+risk depends upon the degree of exposure, so exposure should be minimized. If within 24 hours following application you experience symptoms similar
+to common seasonal illness comparable to the flu, contact your physician or poison control center 1-800-222-1222 and your pest control operator
+immediately. For future information, contact any of the following: your pest control operator; for Health Questions: County Health Dept. – Orange (714)
+834-3155, Los Angeles (562) 347-1700. For Applications Information: County Agriculture Commission - Orange (714) 955-3000, Los Angeles (626) 575-
+5471, Riverside (909) 387-2105. And for Regulatory Information:
+<br><br><br>
+Structural Pest Control Board- 2005 Evergreen St., Suite #1500, Sacramento, CA 95825, (916) 461-8700.
+                </li>
+            </ol>            
+        </div>
+    </form>
+</body>
+</html>
+    
